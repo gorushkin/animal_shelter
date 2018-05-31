@@ -51,3 +51,64 @@ body {
   color: #292929;
   background-color: #f1cdb3;
 }
+
+.about-section,
+.help-section {
+  background-color: #fafafa;
+}
+
+.slider-section,
+.donation-section {
+  background-color: #f6f6f6;
+}
+
+.main-footer {
+  background-color: #362c28;
+}
+
+.section-title {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 35px;
+  line-height: 45px;
+  color: #545454;
+  font-weight: 400;
+}
+
+.pets-name {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 45px;
+  color: #545454;
+}
+
+.help-item a {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #545454;
+  text-decoration: none;
+}
+
+.label-text {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 15px;
+  color: #545454;
+}
+
+.legal-information {
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+}
+
+.footer-contacts .section-title {
+  color: #ffffff;
+}
+
+.contacts-item {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: 20px;
+  line-height: 45px;
+  color: #f1cdb3;
+  text-decoration: none;
+}
