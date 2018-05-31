@@ -1,4 +1,53 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0;  
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #4c4c4c;
+}
+
+.main-header {
+  background-color: #362c28;
+  min-height: 900px;
+}
+
+.logo-title {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 32px;
+  line-height: 97.08px;
+  color: #f1cdb3;
+}
+
+.logo-text {
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  font-size: 13px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.navigation a {
+  line-height: 29px;
+  text-decoration: none;
+  color: #cdcdcd;
+}
+
+.promo-title {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 44px;
+  line-height: 57px;
+  color: #ffffff;
+}
+
+.promo-text {
+  color: #cdcdcd;
+}
+
+.button {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 57px;
+  color: #292929;
+  background-color: #f1cdb3;
 }
