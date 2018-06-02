@@ -87,7 +87,7 @@ body {
   padding: 0;
 
   font-size: 17px;
-  line-height: 50px;
+  line-height: 52px;
   font-family: Georgia, Times, "Times New Roman", serif;
   vertical-align: middle;
   text-align: center;
@@ -156,7 +156,7 @@ body {
 /*----------------------- Начало стилизиции main-header------------------------------ */
 
 .wrapper {
-  /* box-shadow: 0 0 0 3px red; */
+  /* box-shadow: 0 0 0 3px blue; */
   width: 1170px;
   margin: 0 auto;
 }
@@ -189,7 +189,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-/* box-shadow: 0 0 0 3px white; */
   padding-top: 10px;
 
   list-style: none;
@@ -243,7 +242,95 @@ body {
   top: -23px;
 }
 
-/*----------------------- Начало стилизиции about-section------------------------------- */
+/*----------------------- Начало стилизиции slider-section------------------------------- */
+
+.slider-section {
+  background-color: #f6f6f6;
+  /* background-color: black; */
+  width: 100%;
+  text-align: center;
+  padding-top: 70px;
+  box-sizing: border-box;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.slider-section .section-title {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 2px;
+  /* margin-left: 380px; */
+  margin-bottom: 64px;
+}
+
+.pets-slider {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  /* box-shadow: 0 0 0 3px red; */
+  padding-left: 130px;
+  padding-right: 130px;
+  justify-content: space-between;
+  list-style: none;
+  padding-bottom: 66px;
+  
+}
+
+.pets-slider .pet {
+  width: 270px;
+  height: 424px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.pets-slider .pet:hover {
+  box-shadow: 0px 0px 66px -24px rgba(0,0,0,0.25);
+}
+
+.pet img {
+  margin-bottom: 15px;
+}
+
+.pets-name {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.pets-button {
+  width: 188px;
+  background-color: #fafafa;
+  /* border: 2px solid #f1cdb3; */
+  /* box-sizing: border-box; */
+  box-shadow: inset 0 0 0 2px #f1cdb3;
+}
+
+.pets-button:hover {
+  background-color: #f1cdb3;
+}
+
+.under-slider-button {
+  width: 267px;
+  margin-bottom: 68px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -252,7 +339,7 @@ body {
   background-color: #fafafa;
 }
 
-.slider-section,
+
 .donation-section {
   background-color: #f6f6f6;
 }
