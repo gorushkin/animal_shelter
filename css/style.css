@@ -156,7 +156,7 @@ body {
 /*----------------------- Начало стилизиции main-header------------------------------ */
 
 .wrapper {
-  /* box-shadow: 0 0 0 3px blue; */
+  box-shadow: 0 0 0 3px greenyellow;
   width: 1170px;
   margin: 0 auto;
 }
@@ -246,14 +246,10 @@ body {
 
 .slider-section {
   background-color: #f6f6f6;
-  /* background-color: black; */
   width: 100%;
   text-align: center;
   padding-top: 70px;
   box-sizing: border-box;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
 .slider-section .section-title {
@@ -323,21 +319,128 @@ body {
   margin-bottom: 68px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/*----------------------- Начало стилизиции help-section------------------------------- */
 
 .help-section {
   background-color: #fafafa;
+  width: 100%;
+  text-align: center;
+  padding-top: 63px;
+  box-sizing: border-box;
 }
+
+.help-section .section-title {
+  width: 325px;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+}
+
+.help-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* margin-right: -100px; */
+  box-shadow: 0 0 0 3px blue; 
+}
+
+.help-item {
+  /* margin-right: 100px; */
+  height: 95px;
+  box-shadow: 0 0 0 3px red;
+  margin-bottom: 80px;
+}
+
+/* .help-item a {
+  display:none;
+} */
+
+/* .item1 {
+  width: 50px;
+  color: red;
+  background: url(../img/cat-food.svg) no-repeat;
+  position: relative;
+} */
+
+/* .item1 a {
+  display: block;
+  position: absolute;
+}
+
+
+.item2 {
+  width: 50px;
+  color: red;
+  background: url(../img/ambulance.svg) no-repeat;
+} */
+
+/* .item3 {
+  width: 50px;
+  color: red;
+  background: url(../img/ball.svg) no-repeat;
+}
+
+.item4 {
+  width: 50px;
+  color: red;
+  background: url(../img/bowl.svg) no-repeat;
+} */
+
+/* .item5 {
+  width: 50px;
+  color: red;
+  background: url(../img/shampoo.svg) no-repeat;
+} */
+
+/* .item6 {
+  width: 50px;
+  color: red;
+  background: url(../img/pills.svg) no-repeat;
+} */
+
+/* .item7 {
+  width: 50px;
+  color: red;
+  background: url(../img/syringe.svg) no-repeat;
+} */
+
+/* .item8 {
+  width: 50px;
+  color: red;
+  background: url(../img/leash.jpg) no-repeat;
+} */
+
+/* .item9 {
+  width: 50px;
+  color: red;
+  background: url(../img/cat.svg) no-repeat;
+} */
+
+
+
+/* .help-item a {
+  display:none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .donation-section {
