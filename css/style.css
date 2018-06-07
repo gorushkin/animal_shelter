@@ -133,6 +133,8 @@ body {
   font-size: 15px;
   font-family: Georgia, Times, "Times New Roman", serif;
   color: #545454;
+  margin: 0;
+  padding: 0;
 }
 
 .legal-information {
@@ -363,20 +365,13 @@ body {
   margin-bottom: 125px;
 }
 
-.help-item img {
-  /* box-shadow: 0 0 0 3px green; */
-}
-
 .help-item-text {
-  /* display: none; */
   position: absolute;
-  /* box-shadow: 0 0 0 3px green; */
-  /* display: inline-block; */
   margin: 0;
   padding: 0;
   top: 73px;
   text-align: center;
-  /* width: 100px; */
+
   font-size: 20px;
   line-height: 45px;
   color: #545454;
@@ -387,23 +382,80 @@ body {
 
 /*----------------------- Начало стилизиции donation-section------------------------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
 .donation-section {
   background-color: #f6f6f6;
+  min-height: 433px;
+  padding-top: 64px;
+  box-sizing: border-box;
 }
 
+.donation-frame {
+  /* box-shadow: 0 0 0 3px red; */
+  margin-left: 585px;
+  position: relative;
+}
+
+.donation-frame .section-title {
+  width: 365px;
+  letter-spacing: 2px;
+  margin-bottom: 17px;
+}
+
+.label-text {
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+
+.donation-frame input {
+  background: url("../img/credit-card\ \(1\).png") no-repeat 15px center;
+  background-color: #f1cdb3;
+  border: none;
+  width: 320px;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 45px;
+  color: #292929;
+  padding-left: 58px;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+  margin-bottom: 28px;
+  
+}
+
+input::-webkit-input-placeholder {
+  color: #292929;
+}
+
+.legal-information {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  width: 355px;
+}
+
+.donation-frame::before {
+  content: "";
+  display: block;
+  width: 505px;
+  height: 261px;
+  background-color: gray;
+  position: absolute;
+  background: url(../img/donation-pet.png) no-repeat;
+  left: -567px;
+  top: 22px;
+
+}
+
+/*----------------------- Начало стилизиции footer'a------------------------------- */
+
 .main-footer {
+  background-color: #362c28;
+  min-height: 364px;
+  box-sizing: border-box;
+  background: url(../img/footer-pet.png) no-repeat 952px bottom,
+  url(../img/footer-back.jpg) no-repeat center top;
   background-color: #362c28;
 }
 
