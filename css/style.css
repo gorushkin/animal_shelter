@@ -473,24 +473,25 @@ input::-webkit-input-placeholder {
 }
 
 .contacts-item {
-  margin-left: 62px;
-  /* box-shadow: 0 0 0 3px green; */
   margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-item img {
+  margin-right: 22px;
 }
 
 .map .contacts-item {
-  margin-left: 47px;
   margin-bottom: 25px;
 }
 
 .map a {
   line-height: 22px;
-
 }
 
 .main-footer .footer-contacts {
   width: 310px;
-  /* box-shadow: 0 0 0 3px red; */
   margin-right: 141px;
 }
 
