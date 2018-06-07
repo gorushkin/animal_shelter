@@ -435,7 +435,7 @@ input::-webkit-input-placeholder {
   width: 355px;
 }
 
-.donation-frame::before {
+/* .donation-frame::before {
   content: "";
   display: block;
   width: 505px;
@@ -445,7 +445,10 @@ input::-webkit-input-placeholder {
   background: url(../img/donation-pet.png) no-repeat;
   left: -567px;
   top: 22px;
+} */
 
+.donation-section .wrapper {
+  background: url(../img/donation-pet.png) no-repeat 18px 22px;
 }
 
 /*----------------------- Начало стилизиции footer'a------------------------------- */
