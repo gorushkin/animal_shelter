@@ -156,7 +156,7 @@ body {
 /*----------------------- Начало стилизиции main-header------------------------------ */
 
 .wrapper {
-  box-shadow: 0 0 0 3px greenyellow;
+  /* box-shadow: 0 0 0 3px greenyellow; */
   width: 1170px;
   margin: 0 auto;
 }
@@ -327,6 +327,7 @@ body {
   text-align: center;
   padding-top: 63px;
   box-sizing: border-box;
+  min-height: 594px;
 }
 
 .help-section .section-title {
@@ -344,92 +345,47 @@ body {
   padding-right: 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  /* margin-right: -100px; */
-  box-shadow: 0 0 0 3px blue; 
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 .help-item {
-  /* margin-right: 100px; */
-  height: 95px;
-  box-shadow: 0 0 0 3px red;
+  height: 60px;
+  /* box-shadow: 0 0 0 3px red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 80px;
-}
-
-/* .help-item a {
-  display:none;
-} */
-
-/* .item1 {
-  width: 50px;
-  color: red;
-  background: url(../img/cat-food.svg) no-repeat;
   position: relative;
-} */
+  width: 170px;
+  align-items: center;
+  margin-bottom: 125px;
+}
 
-/* .item1 a {
-  display: block;
+.help-item img {
+  /* box-shadow: 0 0 0 3px green; */
+}
+
+.help-item-text {
+  /* display: none; */
   position: absolute;
+  /* box-shadow: 0 0 0 3px green; */
+  /* display: inline-block; */
+  margin: 0;
+  padding: 0;
+  top: 73px;
+  text-align: center;
+  /* width: 100px; */
+  font-size: 20px;
+  line-height: 45px;
+  color: #545454;
+  font-weight: 500;
+  font-family: Georgia, Times, "Times New Roman", serif;
+
 }
 
-
-.item2 {
-  width: 50px;
-  color: red;
-  background: url(../img/ambulance.svg) no-repeat;
-} */
-
-/* .item3 {
-  width: 50px;
-  color: red;
-  background: url(../img/ball.svg) no-repeat;
-}
-
-.item4 {
-  width: 50px;
-  color: red;
-  background: url(../img/bowl.svg) no-repeat;
-} */
-
-/* .item5 {
-  width: 50px;
-  color: red;
-  background: url(../img/shampoo.svg) no-repeat;
-} */
-
-/* .item6 {
-  width: 50px;
-  color: red;
-  background: url(../img/pills.svg) no-repeat;
-} */
-
-/* .item7 {
-  width: 50px;
-  color: red;
-  background: url(../img/syringe.svg) no-repeat;
-} */
-
-/* .item8 {
-  width: 50px;
-  color: red;
-  background: url(../img/leash.jpg) no-repeat;
-} */
-
-/* .item9 {
-  width: 50px;
-  color: red;
-  background: url(../img/cat.svg) no-repeat;
-} */
-
-
-
-/* .help-item a {
-  display:none;
-} */
-
-
-
-
+/*----------------------- Начало стилизиции donation-section------------------------------- */
 
 
 
