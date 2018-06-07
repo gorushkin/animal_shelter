@@ -99,14 +99,17 @@ body {
   border-radius: 52px;
 }
 
+
+
 .section-title {
+  margin: 0;
+  padding: 0;
+
   font-weight: normal;
   font-size: 35px;
   line-height: 45px;
   font-family: Georgia, Times, "Times New Roman", serif;
   color: #545454;
-  margin: 0;
-  padding: 0;
 }
 
 .section-text {
@@ -130,11 +133,12 @@ body {
 }
 
 .label-text {
+  margin: 0;
+  padding: 0;
+
   font-size: 15px;
   font-family: Georgia, Times, "Times New Roman", serif;
   color: #545454;
-  margin: 0;
-  padding: 0;
 }
 
 .legal-information {
@@ -201,96 +205,135 @@ body {
   margin-left: 40px;
 }
 
+.button:hover {
+  background-color: #fddcc4;
+}
+
 /*----------------------- Начало стилизиции about-section------------------------------- */
 
 .about-section {
-  background-color: #fafafa;
-  min-height: 586px;
+  box-sizing: border-box;
   width: 100%;
+  min-height: 586px;
   padding-top: 112px;
-  box-sizing: border-box;  
+
+  background-color: #fafafa;
 }
 
 .about-frame {
-  margin-left: 585px;
   position: relative;
+
+  margin-left: 585px;
 }
 
 .about-frame .section-title {
   width: 315px;
+  margin-bottom: 30px;
+
   letter-spacing: 2px;
-  margin-bottom: 30px;  
 }
 
 .about-frame .section-text {
   width: 420px;
-  letter-spacing: -0.2px;
   margin-bottom: 23px;
   margin-left: 4px;
+
+  letter-spacing: -0.2px;
 }
 
 .about-frame .section-text:last-of-type {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .about-frame::before {
   content: "";
+  position: absolute;
+  top: -23px;
+  left: -417px;
+
   display: block;
   width: 300px;
   height: 408px;
-  background-color: gray;
-  position: absolute;
+
   background: url(../img/about-pets.png) no-repeat;
-  left: -417px;
-  top: -23px;
+  background-color: gray;
 }
 
 /*----------------------- Начало стилизиции slider-section------------------------------- */
 
 .slider-section {
-  background-color: #f6f6f6;
-  width: 100%;
-  text-align: center;
-  padding-top: 70px;
   box-sizing: border-box;
+  width: 100%;
+  padding-top: 70px;
+
+  text-align: center;
+
+  background-color: #f6f6f6;
 }
 
 .slider-section .section-title {
   width: 400px;
   margin: 0 auto;
+  margin-bottom: 64px;
+
   text-align: center;
   letter-spacing: 2px;
-  /* margin-left: 380px; */
-  margin-bottom: 64px;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-button {
+  width: 48px;
+  height: 48px;
+  margin-top: 184px;
+
+  background: url("../img/long-left-arrow-1.png") no-repeat 50% 50%;
+  background-color: #f6f6f6;
+  border: solid 2px #f1cdb3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-button.right {
+  background: url("../img/long-left-arrow.png") no-repeat 50% 50%;
+} 
+
+.slider-button:hover {
+  background-color: #f1cdb3;
 }
 
 .pets-slider {
   display: flex;
   flex-wrap: wrap;
+/* box-shadow: 0 0 0 3px red; */
+  /* padding-left: 130px; */
+  /* padding-right: 130px; */
+  justify-content: space-between;
+  width: 910px;
   margin: 0;
   padding: 0;
-  /* box-shadow: 0 0 0 3px red; */
-  padding-left: 130px;
-  padding-right: 130px;
-  justify-content: space-between;
-  list-style: none;
   padding-bottom: 66px;
-  
+
+  list-style: none;
 }
 
 .pets-slider .pet {
-  width: 270px;
-  height: 424px;
-  border-radius: 10px;
-  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  width: 270px;
+  height: 424px;
+
+  background-color: #fafafa;
+  border-radius: 10px;
 }
 
 .pets-slider .pet:hover {
-  box-shadow: 0px 0px 66px -24px rgba(0,0,0,0.25);
+  box-shadow: 0 0 66px -24px rgba(0,0,0,0.25);
 }
 
 .pet img {
@@ -298,17 +341,20 @@ body {
 }
 
 .pets-name {
-  font-weight: normal;
   margin: 0;
-  padding: 0;
-  letter-spacing: 1px;
   margin-bottom: 7px;
+  padding: 0;
+
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
 .pets-button {
   width: 188px;
+
   background-color: #fafafa;
-  /* border: 2px solid #f1cdb3; */
+
+/* border: 2px solid #f1cdb3; */
   /* box-sizing: border-box; */
   box-shadow: inset 0 0 0 2px #f1cdb3;
 }
@@ -325,104 +371,113 @@ body {
 /*----------------------- Начало стилизиции help-section------------------------------- */
 
 .help-section {
-  background-color: #fafafa;
-  width: 100%;
-  text-align: center;
-  padding-top: 63px;
   box-sizing: border-box;
+  width: 100%;
   min-height: 594px;
+  padding-top: 63px;
+
+  text-align: center;
+
+  background-color: #fafafa;
 }
 
 .help-section .section-title {
   width: 325px;
   margin: 0 auto;
-  letter-spacing: 2px;
   margin-bottom: 70px;
+
+  letter-spacing: 2px;
 }
 
 .help-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-left: 100px;
-  padding-right: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  
+  margin: 0;
+  padding: 0;
+  padding-right: 100px;
+  padding-left: 100px;
+
+  list-style: none;
 }
 
 .help-item {
-  height: 60px;
-  /* box-shadow: 0 0 0 3px red; */
+  position: relative;
+/* box-shadow: 0 0 0 3px red; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 80px;
-  position: relative;
-  width: 170px;
   align-items: center;
+  width: 170px;
+  height: 60px;
+  margin-bottom: 80px;
   margin-bottom: 125px;
 }
 
 .help-item-text {
   position: absolute;
+  top: 73px;
+
   margin: 0;
   padding: 0;
-  top: 73px;
-  text-align: center;
 
+  font-weight: 500;
   font-size: 20px;
   line-height: 45px;
-  color: #545454;
-  font-weight: 500;
   font-family: Georgia, Times, "Times New Roman", serif;
-
+  text-align: center;
+  color: #545454;
 }
 
 /*----------------------- Начало стилизиции donation-section------------------------------- */
 
 .donation-section {
-  background-color: #f6f6f6;
+  box-sizing: border-box;
   min-height: 433px;
   padding-top: 64px;
-  box-sizing: border-box;
+
+  background-color: #f6f6f6;
 }
 
 .donation-frame {
-  /* box-shadow: 0 0 0 3px red; */
-  margin-left: 585px;
   position: relative;
+  /* box-shadow: 0 0 0 3px red; */
+
+  margin-left: 585px;
 }
 
 .donation-frame .section-title {
   width: 365px;
-  letter-spacing: 2px;
   margin-bottom: 17px;
+
+  letter-spacing: 2px;
 }
 
 .label-text {
   display: block;
   margin-bottom: 10px;
+
   letter-spacing: 1.5px;
 }
 
 .donation-frame input {
+  box-sizing: border-box;
+  width: 320px;
+  margin-bottom: 28px;
+  padding-left: 58px;
+
+  font-size: 20px;
+  line-height: 45px;
+  font-family: "Times New Roman", Times, serif;
+  color: #292929;
+  letter-spacing: 0.5px;
+
   background: url("../img/credit-card\ \(1\).png") no-repeat 15px center;
   background-color: #f1cdb3;
   border: none;
-  width: 320px;
   border-radius: 10px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  line-height: 45px;
-  color: #292929;
-  padding-left: 58px;
-  letter-spacing: 0.5px;
-  box-sizing: border-box;
-  margin-bottom: 28px;
-  
 }
 
 input::-webkit-input-placeholder {
@@ -430,10 +485,11 @@ input::-webkit-input-placeholder {
 }
 
 .legal-information {
+  width: 355px;
   margin: 0;
   padding: 0;
+
   font-style: italic;
-  width: 355px;
 }
 
 /* .donation-frame::before {
@@ -455,27 +511,29 @@ input::-webkit-input-placeholder {
 /*----------------------- Начало стилизиции footer'a------------------------------- */
 
 .main-footer {
-  background-color: #362c28;
-  min-height: 362px;
   box-sizing: border-box;
+  min-height: 362px;
+  padding-top: 70px;
+
   background: url(../img/footer-pet.png) no-repeat 1236px bottom,
   url(../img/footer-back.jpg) no-repeat center top;
   background-color: #362c28;
-  padding-top: 70px;
+  background-color: #362c28;
 }
 
 .main-footer .contacts-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
   /* margin-left: 66px; */
   /* box-shadow: 0 0 0 3px red;    */
 }
 
 .contacts-item {
-  margin-bottom: 21px;
   display: flex;
   align-items: center;
+  margin-bottom: 21px;
 }
 
 .contacts-item img {
@@ -497,10 +555,11 @@ input::-webkit-input-placeholder {
 
 .main-footer .section-title {
   margin: 0;
+  margin-bottom: 28px;
   padding: 0;
+
   font-weight: 400;
   letter-spacing: 2px;
-  margin-bottom: 28px;
 }
 
 .main-footer .wrapper {
