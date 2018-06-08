@@ -308,9 +308,6 @@ body {
 .pets-slider {
   display: flex;
   flex-wrap: wrap;
-/* box-shadow: 0 0 0 3px red; */
-  /* padding-left: 130px; */
-  /* padding-right: 130px; */
   justify-content: space-between;
   width: 910px;
   margin: 0;
@@ -571,10 +568,24 @@ input::-webkit-input-placeholder {
 .modal-pet-info {
   width: 970px;
   min-height: 470px;
-  padding-left: 527px;
-  padding-top: 56px;
-  box-shadow: 0 0 0 3px red;
   box-sizing: border-box; 
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  left: 475px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 10px;  
+}
+
+.modal-pet-photo {
+  margin-right: 56px;
+}
+
+.pet-info {
+  /* box-shadow: 0 0 0 3px red; */
+  padding-top: 54px;
 }
 
 .modal-pet-name {
@@ -631,14 +642,32 @@ input::-webkit-input-placeholder {
   font-weight: 400;
   margin-left: 1px;
   letter-spacing: 1.5px;
+  
 }
 
 .modal-pet-about b {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 17px;
   font-weight: 400;
+  padding: 0px;
+  margin: 0px;
 }
+
 
 .bullet {
   color: #f1cdb3;
+}
+
+.modal-pet-info-close {
+  width: 50px;
+  height: 50px;
+  /* background: url("../img/cancel.svg") no-repeat 50% 50%; */
+  background-size: contain;
+  background-color: transparent;
+  border: solid 2px #f1cdb3;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
