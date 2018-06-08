@@ -9,22 +9,22 @@
     <header class="catalog-header">
       <div class="wrapper">
         <nav class="main-navigation">
-          <a class="main-logo">
+          <a href="index.html" class="main-logo">
             <span class="logo-title">Cozy House</span>
             <span class="logo-text">Shelter for pets in Boston</span>
           </a>
           <ul class="navigation">
-            <li><a href="#">About the shelter</a></li>
-            <li><a href="catalog.html">Our pets</a></li>
-            <li><a href="#">To help the shelter</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a class="navigation-link" href="#">About the shelter</a></li>
+            <li><a class="navigation-link current" href="#">Our pets</a></li>
+            <li><a class="navigation-link" href="#">To help the shelter</a></li>
+            <li><a class="navigation-link" href="#">Contacts</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="catalog">
       <div class="wrapper">
-        <h1>Our friends who are looking for a house</h1>
+        <h2 class="section-title">Our friends who are&nbsp;looking&nbsp;for&nbsp;a&nbsp;house</h2>
         <ul class="pets-list">
           <li class="pet">
             <img src="img/pet1.png" width="270" height="270" alt="Katrine">
@@ -42,29 +42,29 @@
             <a class="button pets-button woody" href="#">Learn More</a>
           </li>
           <li class="pet">
-            <img src="img/pet4.png" width="270" height="270" alt="Katrine">
+            <img src="img/pet4.png" width="270" height="270" alt="Sophia">
             <h3 class="pets-name">Sophia</h3>
-            <a class="button pets-button katrine" href="#">Learn More</a>
+            <a class="button pets-button sophia" href="#">Learn More</a>
           </li>
           <li class="pet">
-            <img src="img/pet5.png" width="270" height="270" alt="Katrine">
+            <img src="img/pet5.png" width="270" height="270" alt="Timmy">
             <h3 class="pets-name">Timmy</h3>
-            <a class="button pets-button katrine" href="#">Learn More</a>
+            <a class="button pets-button timmy" href="#">Learn More</a>
           </li>
           <li class="pet">
-            <img src="img/pet6.png" width="270" height="270" alt="Katrine">
+            <img src="img/pet6.png" width="270" height="270" alt="Charly">
             <h3 class="pets-name">Charly</h3>
-            <a class="button pets-button katrine" href="#">Learn More</a>
+            <a class="button pets-button charly" href="#">Learn More</a>
           </li>
           <li class="pet">
-            <img src="img/pet7.png" width="270" height="270" alt="Katrine">
+            <img src="img/pet7.png" width="270" height="270" alt="Scarlett">
             <h3 class="pets-name">Scarlett</h3>
-            <a class="button pets-button katrine" href="#">Learn More</a>
+            <a class="button pets-button scarlett" href="#">Learn More</a>
           </li>
           <li class="pet">
-            <img src="img/pet8.png" width="270" height="270" alt="Katrine">
+            <img src="img/pet8.png" width="270" height="270" alt="Freddie">
             <h3 class="pets-name">Freddie</h3>
-            <a class="button pets-button katrine" href="#">Learn More</a>
+            <a class="button pets-button freddie" href="#">Learn More</a>
           </li>
         </ul>
         <ul class="pagination-list">
@@ -105,5 +105,30 @@
         </div>
       </div>
     </footer>
+    <section class="modal-pet-info">
+      <img class="modal-pet-photo" src="img/modal-pet.png" width="470px" height="470px" alt="Jennifer">
+      <article class="pet-info">
+        <h2 class="modal-pet-name">Jennifer</h2>
+        <span class="modal-pet-species">Pooch + Labrador</span>
+        <p class="modal-pet-story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+        <ul class="modal-pet-about">
+          <li>
+            <span class="bullet">•</span> <b>Age:</b> 2 months
+          </li>
+          <li>
+            <span class="bullet">•</span> <b>Inoculations:</b> none
+          </li>
+          <li>
+            <span class="bullet">•</span> <b>Diseases:</b> none
+          </li>
+          <li>
+            <span class="bullet">•</span> <b>Parasites:</b> none
+          </li>
+        </ul>
+      </article>
+      <button class="modal-pet-info-close" type="button">Закрыть</button>
+    </section>
+    <script src="js/script.js">   
+    </script>
   </body>
 </html>

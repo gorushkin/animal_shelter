@@ -11,6 +11,10 @@ body {
 
 /*----------------------- Начало базовой стилизиции ------------------------------ */
 
+.main-logo {
+  text-decoration: none;
+}
+
 .logo-title {
   margin: 0;
   padding: 0;
@@ -271,7 +275,8 @@ body {
   background-color: #f6f6f6;
 }
 
-.slider-section .section-title {
+.slider-section .section-title,
+.catalog .section-title {
   width: 400px;
   margin: 0 auto;
   margin-bottom: 64px;
@@ -317,7 +322,7 @@ body {
   list-style: none;
 }
 
-.pets-slider .pet {
+.pet {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -683,12 +688,14 @@ input::-webkit-input-placeholder {
   display: flex;
 }
 
-/*----------------------- Начало стилизиции каталога------------------------------- */
+/*----------------------- Начало стилизиции хедера каталога------------------------------- */
 
 .catalog-header {
   min-height: 113px;
   background-color: #fafafa;
   box-shadow: 0 0 0 3px red;
+  padding-top: 30px;
+  box-sizing: border-box;
 }
 
 .catalog-header .logo-title {
@@ -699,3 +706,43 @@ input::-webkit-input-placeholder {
   color: #292929;
 }
 
+.catalog-header .navigation-link {
+  color: #545454;
+}
+
+.catalog-header .navigation-link.current {
+  color: #292929;
+}
+
+.catalog-header .main-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------------- Начало стилизиции каталога------------------------------- */
+
+
+.catalog {
+  box-sizing: border-box;
+  min-height: 1268px;
+  background-color: #f6f6f6;
+  padding-top: 60px;
+}
+
+.catalog .section-title {
+  margin-bottom: 59px;
+}
+
+.pets-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+
+.catalog .pet {
+  margin-right: 30px;
+  margin-bottom: 34px;
+}
