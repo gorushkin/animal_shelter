@@ -511,7 +511,6 @@ input::-webkit-input-placeholder {
   box-sizing: border-box;
   min-height: 362px;
   padding-top: 70px;
-
   background: url(../img/footer-pet.png) no-repeat 1236px bottom,
   url(../img/footer-back.jpg) no-repeat center top;
   background-color: #7a594c;
@@ -673,4 +672,8 @@ input::-webkit-input-placeholder {
   top: -57px;
   right: -57px;
   font-size: 0;
+}
+
+.modal-pet-info-close:hover {
+  background-color: #f1cdb3;
 }
