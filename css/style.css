@@ -31,7 +31,7 @@ body {
   letter-spacing: 1.5px;
 }
 
-.navigation a {
+.navigation-link {
   position: relative;
 
   line-height: 29px;
@@ -39,12 +39,12 @@ body {
   text-decoration: none;
 }
 
-.navigation a:hover {
+.navigation-link:hover {
   color: #ffffff;
   /* box-shadow: 0 50px 0 -1 #f1cdb3; */
 }
 
-.navigation a:hover::after {
+.navigation-link:hover::after {
   content: "";
   position: absolute;
   top: 20px;
@@ -682,3 +682,20 @@ input::-webkit-input-placeholder {
 .modal-show {
   display: flex;
 }
+
+/*----------------------- Начало стилизиции каталога------------------------------- */
+
+.catalog-header {
+  min-height: 113px;
+  background-color: #fafafa;
+  box-shadow: 0 0 0 3px red;
+}
+
+.catalog-header .logo-title {
+  color: #545454;  
+}
+
+.catalog-header .logo-text {
+  color: #292929;
+}
+
