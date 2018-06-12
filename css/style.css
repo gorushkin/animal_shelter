@@ -760,10 +760,20 @@ input::-webkit-input-placeholder {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 279px;
   margin: 0 auto;
   /* box-shadow: 0 0 0 3px red; */
+}
+
+.pagination-list li {
+  margin-right: 17px;
+  /* box-shadow: 0 0 0 3px green; */
+}
+
+.pagination-list li:last-child {
+  margin-right: 0px;
+  margin-left: 25px;
 }
 
 .pagination-button {
@@ -781,7 +791,20 @@ input::-webkit-input-placeholder {
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   color: #292929;
+  position: relative;  
 }
+
+.dotes-button::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 5px;
+  /* background-color: red; */
+  background: url("../img/Bullets.png") no-repeat 50% 50%;
+  top: 22px;
+  right: 58px;
+}
+
 
 .pagination-button.current,
 .pagination-button:hover {
