@@ -260,7 +260,6 @@ body {
   height: 408px;
 
   background: url(../img/about-pets.png) no-repeat;
-  background-color: gray;
 }
 
 /*----------------------- Начало стилизиции slider-section------------------------------- */
@@ -394,7 +393,7 @@ body {
 .help-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: 0;
   padding: 0;
