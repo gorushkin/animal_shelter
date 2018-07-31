@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1170px;
 
   font-weight: normal;
   font-size: 15px;
@@ -167,7 +168,7 @@ body {
 /*----------------------- Начало стилизиции main-header------------------------------ */
 
 .wrapper {
-  /* box-shadow: 0 0 0 3px greenyellow; */
+  box-shadow: 0 0 0 3px greenyellow;
   width: 1170px;
   margin: 0 auto;
 }
